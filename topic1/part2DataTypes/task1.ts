@@ -1,4 +1,4 @@
-let firstName = "Ілля";
+let firstName: string = "Ілля";
 
 console.log( `привіт ${1}` ); // ?
 

@@ -11,7 +11,7 @@ if (1 || 0) { // працює так само, як ( true || false )
   }
 
 
-  let hour = 11;
+  let hour: number = 11;
 
   if (hour < 10 || hour > 18) {
     console.log( 'Офіс зачинений.' );
@@ -21,9 +21,9 @@ if (1 || 0) { // працює так само, як ( true || false )
   }
 
 
-let firstName1 = "";
-let lastName = "";
-let nickName = "СуперКодер";
+let firstName1: string = "";
+let lastName: string = "";
+let nickName: string = "СуперКодер";
 
 console.log( firstName1 || lastName || nickName || "Анонім"); // СуперКодер
 
@@ -35,8 +35,8 @@ console.log( false && true );  // false
 console.log( true && false );  // false
 console.log( false && false ); // false
 
-let hours = 12;
-let minute = 30;
+let hours: number = 12;
+let minute: number = 30;
 
 if (hours == 12 && minute == 30) {
     console.log( 'Час: 12:30' );

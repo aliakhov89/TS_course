@@ -21,7 +21,9 @@ let b = 2;
 let c = 3 - (a = b + 1);
 console.log(a); // 3
 console.log(c); // 0
-let e, f, g;
+let e;
+let f;
+let g;
 e = f = g = 2 + 2;
 console.log(a); // 4
 console.log(b); // 4

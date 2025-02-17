@@ -1,18 +1,18 @@
-let value = true;
+let value: boolean = true;
 console.log(typeof value);
 
 
-let test = String(value); // тепер value - це рядок "true"
+let test: string = String(value); // тепер value - це рядок "true"
 console.log(typeof test);
 
-let newStr = "123";
+let newStr: string = "123";
 console.log(typeof newStr); // string
 
-let num = Number(newStr); // стає числом 123
+let num: number = Number(newStr); // стає числом 123
 
 console.log(typeof num); // number
 
-let ageNew = Number("довільний рядок замість числа");
+let ageNew: number = Number("довільний рядок замість числа");
 
 console.log(ageNew); // NaN, помилка перетворення
 

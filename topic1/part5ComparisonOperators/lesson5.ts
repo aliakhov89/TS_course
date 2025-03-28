@@ -6,7 +6,7 @@ console.log(a1 == b1); // false
 console.log(a1 != b1); // true
 
 
-let result = 5 > 4; // присвоїти результат порівняння змінній result
+let result: boolean = 5 > 4; // присвоїти результат порівняння змінній result
 console.log( result ); // true
 
 

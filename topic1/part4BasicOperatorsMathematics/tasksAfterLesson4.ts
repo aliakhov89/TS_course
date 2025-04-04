@@ -1,9 +1,9 @@
 //Які кінцеві значення всіх змінних k, y, j та l після виконання коду нижче?
 
-let k = 1, y = 1;
+let k: number = 1, y = 1;
 
-let j = ++k; // answerj = 2, k = 2
-let l = y++; // answer l = 1, y = 2
+let j: number = ++k; // answerj = 2, k = 2
+let l: number = y++; // answer l = 1, y = 2
 
 console.log(j);
 console.log(l);
@@ -13,9 +13,9 @@ console.log(y);
 
 //Які значення мають a2 та x2 після виконання коду нижче?
 
-let a2 = 2;
+let a2: number = 2;
 
-let x2 = 1 + (a2 *= 2); //answer  a2 = 4, x2= 5
+let x2: number = 1 + (a2 *= 2); //answer  a2 = 4, x2= 5
 
 console.log(a2);
 console.log(x2);
@@ -49,7 +49,7 @@ console.log(x2);
 
 //alert(a + b); // 12
 
-//Ми отримуємо 12 тому що виконується конкатенація
+//Ми отримуємо 12, тому що виконується конкатенація
 
 //Виправлений код
 //+ перед prompt перетворює введені значення на числа, і далі операція додавання працює як треба

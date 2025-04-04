@@ -2,8 +2,8 @@
 let message = "привіт";
 
 
-let digitX: number = 123;
-digitX = 12.345;
+let n = 123;
+n = 12.345;
 
 console.log(1 / 0);//get infinity
 

@@ -62,6 +62,10 @@ function minOfTwoNumbers(a: number, b: number) {
       return a;
   }
 }
+//перепиши функцію на більш читабельний варіант, оскільки перевірка маленька а строчок кода багато
+function minOfTwoNumbersShortVersion(a: number, b: number): number {
+    return a > b ? b : a;
+}
 
 //Функція pow(x, n)
 // Напишіть функцію pow(x, n), яка повертає число x, піднесене до степеня n. Інакше кажучи, множить число x саме на себе n разів і повертає результат.
@@ -72,6 +76,10 @@ function minOfTwoNumbers(a: number, b: number) {
 //P.S. В цій задачі функція повинна підтримувати лише натуральні значення n, тобто цілі числа, починаючи з 1.
 
 function pow(x: number, n: number) {
+    if (n < 1) {
+        throw new Error("Перше число має бути більше 0");
+    }
+
     let result: number = 1; // Початкове значення результату
     for (let i: number = 0; i < n; i++) {
         result *= x; // Множимо result на x n разів

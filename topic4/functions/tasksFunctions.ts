@@ -76,7 +76,7 @@ function minOfTwoNumbersShortVersion(a: number, b: number): number {
 //P.S. В цій задачі функція повинна підтримувати лише натуральні значення n, тобто цілі числа, починаючи з 1.
 
 function pow(x: number, n: number) {
-    if (n < 1) {
+    if (n <  1) {
         throw new Error("Перше число має бути більше 0");
     }
 
@@ -84,5 +84,9 @@ function pow(x: number, n: number) {
     for (let i: number = 0; i < n; i++) {
         result *= x; // Множимо result на x n разів
     }
+    console.log(result);
     return result; // Повертаємо результат
 }
+
+pow(2, 0)
+

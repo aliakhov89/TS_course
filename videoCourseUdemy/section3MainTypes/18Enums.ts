@@ -13,7 +13,7 @@ const res = {
 };
 
 
-function action(status: StatusCodes) {
+function action(status: StatusCodes): void {
     console.log(status);
 }
 

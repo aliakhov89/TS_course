@@ -14,17 +14,17 @@ interface Role {
     roleId: number;
 }
 
-interface UserWithRole2 extends UserForTest, Role {
+interface UserWithRole4 extends UserForTest, Role {
     createdAt: Date;
 }
 
-let user2: UserWithRole2 = {
+let user4: UserWithRole4 = {
     name: 'Andrii',
     age: 36,
     skills: ['1', '2'],
     roleId: 1,
     createdAt: new Date(),
-    log(23) {
-        return `test {id}`
+    log(id: number) {
+        return `test {id}`;
     }
 }

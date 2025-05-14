@@ -5,7 +5,7 @@ input = ['qwe', 'sdf'];
 
 let res: string = input; //get an error
 
-function run(i: unknown) {
+function run(i: unknown): void {
     if(typeof i == 'number') {
         i++;
     } else {

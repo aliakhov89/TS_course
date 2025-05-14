@@ -26,10 +26,11 @@ let user1: User = {
     skills: ['1', '2', '3'],
 }
 
-type UserWithRole = {
-    user: User,
-    role: Role
+type UserRole = {
+    id: number,
 }
+
+type UserWithRole = User & UserRole;
 
 let user2: UserWithRole = {
     name: 'Dmitro',

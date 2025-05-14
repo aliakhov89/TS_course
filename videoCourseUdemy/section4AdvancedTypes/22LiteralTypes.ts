@@ -15,4 +15,12 @@ fetchWithAuth1('s', method2);
 
 fetchWithAuth1('s', method as 'post');//привели тип method к post
 
+function fetchWithAuth2(url: string, method: 'post' | 'get'): 1 | -1 {
+    if (method === 'post') {
+        return 1;
+    } else {
+        return -1;
+    }
+}
+
 

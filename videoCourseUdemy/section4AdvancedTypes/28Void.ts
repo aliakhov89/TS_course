@@ -4,14 +4,14 @@ function logId(id: string | number): void {
     console.log(id);
 }
 
-const logId1 = logId('a');
+const logId1: void = logId('a');
 
 type voidFunction = () => void;
 
-const f1: voidFunction = () => {};
+const f1: voidFunction = (): void => {};
 
-const f2: voidFunction = () => {
+const f2: voidFunction = (): boolean => {
     return true
 };
 
-const b = f2();
+const bb = f2();

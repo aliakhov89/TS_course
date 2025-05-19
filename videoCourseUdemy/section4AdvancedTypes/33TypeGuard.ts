@@ -16,9 +16,9 @@ interface Admin {
 }
 
 function logId(id: string | number): void {
-    if (typeof (id) !== 'string'){
+    if (typeof id !== 'string'){
         console.log(id);
-    } else if (typeof (id) === 'number'){
+    } else if (typeof id === 'number'){
         console.log(id);
     }
 }
@@ -32,7 +32,7 @@ function isAdmin(user: UserTest | Admin ): user is Admin {
 }
 
 function setRole(user: UserTest | Admin): void {
-    if (isAdmin(user) {
+    if (isAdmin(user)) {
         user.role = 0;
     } else {
         throw new Error('User is not admin');

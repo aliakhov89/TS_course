@@ -1,4 +1,4 @@
-class User {
+class TestUser {
     name1: string;
     email: string;
     dateOfbirth: string;
@@ -10,14 +10,14 @@ class User {
     }
 }
 
-const userA = new User('Vasia', 'test@test.com', '02.01.1999');
+const userA = new TestUser('Vasia', 'test@test.com', '02.01.1999');
 console.log(userA);
 
 userA.name1 = 'Dima';
 console.log(userA);
 
 class AdminUser {
-    role: number;
+    role!: number;
 }
 
 const adminUser = new AdminUser();

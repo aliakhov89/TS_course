@@ -1,12 +1,12 @@
 class TestUser {
     name1: string;
     email: string;
-    dateOfbirth: string;
+    dateOfBirth: string;
 
     constructor(name: string, email: string, dateOfbirth: string) {
         this.name1 = name;
         this.email = email;
-        this.dateOfbirth = dateOfbirth;
+        this.dateOfBirth = dateOfbirth;
     }
 }
 

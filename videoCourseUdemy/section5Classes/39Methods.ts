@@ -7,7 +7,7 @@ enum PaymentStatus {
 
 class Payment {
     id: number;
-    status: string;
+    status: number;
     createdAt: Date;
     updatedAt: Date;
 
@@ -15,13 +15,14 @@ class Payment {
         this.id = id;
         this.createdAt = new Date();
         this.status = PaymentStatus.Holded;
+        this.updatedAt = new Date();
     }
 
     getPaymentLifeTime(): number {
         return new Date().getTime() - this.createdAt.getTime();
     }
 
-    unholdPayment(): void {
+    unHoldPayment(): void {
         if(this.status == PaymentStatus.Processed) {
             throw new Error("Payment can't be reverced");
         }
@@ -31,7 +32,7 @@ class Payment {
 }
 
 const payment = new Payment(1);
-payment.unholdPayment();
+payment.unHoldPayment();
 console.log(payment);
 const time: number = payment.getPaymentLifeTime();
 console.log(time);

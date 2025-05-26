@@ -7,7 +7,7 @@ class Student {
         if (typeof skillOrSkills === 'string') {
             this.skills.push(skillOrSkills);
         } else {
-            this.skills.push(skillOrSkills);
+            this.skills.push(...skillOrSkills);
         }
     }
 }

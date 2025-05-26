@@ -2,27 +2,32 @@ class Laptop {
     _model: string;
     _hdd: number;
 
+    constructor(model: string, hdd: number) {
+        this._model = model;
+        this._hdd = hdd;
+    }
+
     set model(dell: string) {
-        this._model = dell; // Устанавливаем значение модели
+        this._model = dell;
     }
 
     get model(): string {
-        return this._model; // Возвращаем значение модели
+        return this._model;
     }
 
     set hdd(size: number) {
-        this._hdd = size; // Устанавливаем размер жесткого диска
+        this._hdd = size;
     }
 
     get hdd(): number {
-        return this._hdd; // Возвращаем размер жесткого диска
+        return this._hdd;
     }
 }
 
-const laptopDell = new Laptop();
+const laptopDell = new Laptop('initialModel', 256);
 laptopDell.model = 'laptopDell';
-laptopDell.hdd = 512; // Пример установки значения для hdd
+laptopDell.hdd = 512;
 
 console.log(laptopDell);
-console.log(laptopDell.model); // 'laptopDell'
-console.log(laptopDell.hdd); // 512
+console.log(laptopDell.model);
+console.log(laptopDell.hdd);

@@ -1,9 +1,9 @@
-function greet(this: { name: string }) {
+function greet(this: { name: string }) : void {
     console.log(`Привет, ${this.name}`);
 }
 
 
-function logUser(this: { id: number }) {
+function logUser(this: { id: number }) : void {
     console.log(`User ID: ${this.id}`);
 }
 
@@ -15,7 +15,7 @@ const user123 = {
 user123.log();
 
 
-function sayHello(this: void, name: string) {
+function sayHello(this: void, name: string) : void {
     console.log(`Hi, ${name}`);
 }
 

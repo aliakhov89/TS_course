@@ -1,0 +1,4 @@
+{
+  //"include": ["**/*.ts"],
+  "exclude": ["52ExersiceAbstractLogger.ts"]
+}

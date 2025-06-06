@@ -1,0 +1,1 @@
+const testAAA: number = 5;
